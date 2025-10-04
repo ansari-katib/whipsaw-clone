@@ -36,8 +36,8 @@ const Navbar = () => {
       animate={{ y: show ? 0 : -120 }} // hide/show with slide
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div className='w-full flex items-center justify-between px-5 lg:px-20 md:px-20 py-6 lg:py-8 relative'>
-        <h1 className='text-3xl md:text-4xl lg:text-5xl tracking-widest'><Link to={'/'}>WHIPSAW</Link></h1>
+      <div className='w-full flex items-center justify-between px-5 lg:px-5 md:px-20 py-6 lg:py-8 relative'>
+        <h1 className='text-3xl md:text-4xl lg:text-4xl xl:text-5xl tracking-widest'><Link to={'/'}>WHIPSAW</Link></h1>
 
         {/* Desktop Menu */}
         <motion.ul
@@ -56,14 +56,14 @@ const Navbar = () => {
               variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <Link to={item.link} className="text-2xl font-light">{item.itemName}</Link>
+              <Link to={item.link} className="lg:text-xl xl:text-2xl font-light">{item.itemName}</Link>
             </motion.li>
           ))}
           <motion.li
             variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.5, ease: "easeOut", delay: navItems.length * 0.1 }}
           >
-            <Link to="/contact" className='text-2xl bg-white text-black py-3 px-5 rounded-full'>
+            <Link to="/contact" className='lg:text-xl bg-white text-black py-2 px-5 rounded-full'>
               Get in touch
             </Link>
           </motion.li>
@@ -92,7 +92,7 @@ const Navbar = () => {
                   variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0 } }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Link to={item.link} onClick={() => setIsOpen(false)} className="text-2xl font-light text-white">
+                  <Link to={item.link} onClick={() => setIsOpen(false)} className="lg:text-2xl font-light text-white">
                     {item.itemName}
                   </Link>
                 </motion.li>

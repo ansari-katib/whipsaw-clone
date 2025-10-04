@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { axiosInstance, _routes } from "@/axios/axios";
 import { toast } from "react-hot-toast";
 import { Link } from "react-router";
+import { Loader } from "lucide-react";
 
 const AddBlog = () => {
   const [formData, setFormData] = useState({
@@ -125,7 +126,7 @@ const AddBlog = () => {
           disabled={loading}
           className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition disabled:opacity-50"
         >
-          {loading ? "Posting..." : "Post Blog"}
+          {loading ? <Loader className="size-5"/> : "Post Blog"}
         </button>
       </form>
     </div>

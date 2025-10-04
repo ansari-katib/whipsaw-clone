@@ -10,7 +10,7 @@ import Video from '@/components/LandingPageComponent/Video';
 const LandingPage = () => {
   return (
     <>
-      <div className="relative flex min-h-[90vh] w-full flex-col items-start justify-start overflow-hidden">
+      <div className="relative flex min-h-[70vh] sm:min-h-[90vh] md:min-h-[90vh] w-full flex-col items-start justify-start overflow-hidden">
 
         {/* Dark Background behind ripple */}
         <motion.div
@@ -35,16 +35,16 @@ const LandingPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
-          className="relative z-10 mt-60 w-full text-center"
+          className="relative z-10 mt-40 md:mt-60 w-full mx-5 sm:text-center"
         >
           <motion.h2
             initial={{ opacity: 0, y: 20 }}   // only slide up
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-7xl text-[4em] font-bold text-white md:text-8xl lg:text-9xl"
+            className="sm:mx-10 lg:mx-auto max-w-7xl text-5xl font-bold text-white md:text-7xl lg:text-8xl xl:text-9xl"
           >
-            Design <span>& build what others only imagine</span>
+            Design <span className=''>& build what others only imagine</span>
           </motion.h2>
         </motion.div>
 

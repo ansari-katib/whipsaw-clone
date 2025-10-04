@@ -60,7 +60,7 @@ const Work = () => {
         </div>
         <div>
           {blogs.length === 0 ? (
-            <p className="text-center text-xl">No blogs found.</p>
+            <p className="text-center text-2xl text-neutral-600"> No blogs found.</p>
           ) : (
             <div className="flex flex-col gap-20">
               {blogs.map((blog, index) => (

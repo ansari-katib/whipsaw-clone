@@ -52,18 +52,18 @@ const BottomBall = () => {
           initial={{ width: 80 }}
           animate={{ width: isHovered ? 300 : 80 }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="h-20 bg-black rounded-full flex items-center px-4 shadow-lg cursor-pointer"
+          className="h-15 lg:h-20 bg-black rounded-full flex items-center px-5 lg:px-4 shadow-lg cursor-pointer"
         >
           {/* Icon */}
           <motion.div
             animate={{ rotate: isHovered ? 90 : 0 }}
             transition={{ duration: 0.3 }}
-            className="flex items-center justify-center w-8 h-8 text-white"
+            className="flex items-center justify-center w-10 h-10 text-white"
           >
             {isHovered ? (
               <span className="text-white text-2xl font-bold">→</span>
             ) : (
-              <AtSign className="w-8 h-8 text-white" />
+              <AtSign className="size-7 md:size-8 text-white" />
             )}
           </motion.div>
 

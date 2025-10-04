@@ -77,10 +77,10 @@ const Footer = () => {
           variants={fadeUp}
           className="flex flex-col lg:flex-row gap-10 mx-5 items-start lg:items-center lg:justify-between my-20"
         >
-          <h1 className="text-5xl">Transforming vision into reality</h1>
+          <h1 className="text-4xl md:text-5xl">Transforming vision into reality</h1>
           <Link
             to="/contact"
-            className="text-2xl bg-white text-black py-3 px-5 rounded-full hover:scale-105 transition-transform"
+            className="md:text-2xl bg-white text-black py-3 px-5 rounded-full hover:scale-105 transition-transform"
           >
             Get in touch
           </Link>
@@ -89,7 +89,7 @@ const Footer = () => {
         <p className="border-b-2 border-neutral-500" />
 
         {/* Main Content */}
-        <div className="flex mx-10 lg:mx-0 gap-20 lg:items-center flex-col lg:flex-row lg:justify-between mt-20">
+        <div className="flex mx-5 lg:mx-0 gap-20 lg:items-center flex-col xl:flex-row lg:justify-between mt-20">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -107,7 +107,7 @@ const Footer = () => {
             whileInView="show"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-2 gap-10 text-2xl"
+            className="grid grid-cols-2 gap-7 md:gap-10 md:text-2xl"
           >
             {navItems.map((item, index) => (
               <motion.li
@@ -135,13 +135,13 @@ const Footer = () => {
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="lg:text-2xl text-xl border-b-2 border-neutral-500 py-2 pr-5 lg:pr-30 focus:outline-none bg-black"
+                className="lg:text-2xl text-md border-b-2 border-neutral-500 py-2 pr-5 lg:pr-30 focus:outline-none bg-black"
                 placeholder="Sign up for our newsletter"
                 required
               />
               <button
                 type="submit" // Type="submit" makes this button trigger the form's onSubmit
-                className="text-xl lg:text-2xl border-b-2 py-2 border-neutral-500 text-neutral-400 hover:text-neutral-200 transition-colors ml-3"
+                className="text-md lg:text-2xl border-b-2 py-2 border-neutral-400 text-neutral-300 hover:text-neutral-200 transition-colors ml-3"
               >
                 Submit
               </button>

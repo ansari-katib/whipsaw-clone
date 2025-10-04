@@ -2,7 +2,7 @@ import Insight from '@/components/LandingPageComponent/Insight';
 import { BackgroundRippleEffect } from '../components/ui/background-ripple-effect'; // relative path if @ alias not working
 import React from 'react';
 import FeatureProduct from '@/components/LandingPageComponent/FeatureProduct';
-import Scroll from '@/components/LandingPageComponent/scroll';
+import Scroll from '@/components/LandingPageComponent/Scroll';
 import { motion } from 'framer-motion';
 import Latest from '@/components/LandingPageComponent/Latest';
 import Video from '@/components/LandingPageComponent/Video';

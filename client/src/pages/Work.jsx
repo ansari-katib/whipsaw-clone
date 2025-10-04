@@ -83,7 +83,7 @@ const Work = () => {
                   >
                     <img
                       src={
-                        blog.image ? `http://localhost:5000${blog.image}` : "blog image"
+                        blog.image ? `https://whipsaw-clone.onrender.com${blog.image}` : "blog image"
                       }
                       alt={blog.title}
                       className="w-full h-64 lg:h-96 object-cover rounded-xl shadow-lg"
